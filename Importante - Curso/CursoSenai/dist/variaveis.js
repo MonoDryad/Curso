@@ -122,9 +122,9 @@ console.log(divisao);
 // Exercicio 11
 console.log("");
 console.log("Exercicio 11");
-var numeroTotal = 100;
-var numeroDoUsuario = 5;
-var percentual = numeroDoUsuario * 100 / numeroTotal;
+var porcentagemDoUsuario = 5;
+var numeroDoUsuario = 1430;
+var percentual = numeroDoUsuario * (porcentagemDoUsuario/numeroDoUsuario);
 console.log("Seu valor é de", percentual, "%");
 // Exercicio 12
 console.log("");

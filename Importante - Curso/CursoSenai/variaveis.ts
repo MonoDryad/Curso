@@ -85,10 +85,10 @@ console.log("")
 console.log("Exercicio 6")
 
 const PI = 3.14;
-const g = 5;
-const T = 1;
-const GG = 2;
-const GLHF = 4;
+const g = 5.23;
+const T = 1.12;
+const GG = 2.58;
+const GLHF = 4.95;
 
 console.log(PI, g, T, GG, GLHF)
 

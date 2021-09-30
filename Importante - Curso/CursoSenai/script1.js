@@ -64,7 +64,7 @@ if(isValid == true){
     isValid = false
     isDoing = true
 }  else{
-    console.log("O comando inserido não é valido")
+    console.log("O comando inserido é invalido")
     isValid = true
     isDoing = false
 }
