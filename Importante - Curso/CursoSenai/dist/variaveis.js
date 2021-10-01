@@ -73,10 +73,10 @@ console.log(numeros);
 console.log("");
 console.log("Exercicio 6");
 var PI = 3.14;
-var g = 5;
-var T = 1;
-var GG = 2;
-var GLHF = 4;
+var g = 5.23;
+var T = 1.12;
+var GG = 2.58;
+var GLHF = 4.95;
 console.log(PI, g, T, GG, GLHF);
 // Exercicio 7
 console.log("");
@@ -122,9 +122,9 @@ console.log(divisao);
 // Exercicio 11
 console.log("");
 console.log("Exercicio 11");
-var porcentagemDoUsuario = 5;
-var numeroDoUsuario = 1430;
-var percentual = numeroDoUsuario * (porcentagemDoUsuario/numeroDoUsuario);
+var numeroTotal = 100;
+var numeroDoUsuario = 5;
+var percentual = numeroDoUsuario * 100 / numeroTotal;
 console.log("Seu valor é de", percentual, "%");
 // Exercicio 12
 console.log("");
@@ -155,9 +155,9 @@ console.log("Exercicio 13");
 var Crie4variáveis = "Crie 4 variáveis";
 var eMostreAoUsuário = " e mostre ao usuário";
 var aSomaDosTotais = " a soma dos totais";
-var deCaracteres = " de caracteres";
+var deCaracteres = " de caracteres ";
 var caracteresTotal = Crie4variáveis.length + eMostreAoUsuário.length + aSomaDosTotais.length + deCaracteres.length;
-console.log(Crie4variáveis + eMostreAoUsuário + aSomaDosTotais + deCaracteres + " =", caracteresTotal);
+console.log(Crie4variáveis + eMostreAoUsuário + aSomaDosTotais + deCaracteres + "=", caracteresTotal);
 // Exercicio 14
 console.log("");
 console.log("Exercicio 14");

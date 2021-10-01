@@ -189,7 +189,7 @@ console.log("Exercicio 13")
 let Crie4variáveis = "Crie 4 variáveis"
 let eMostreAoUsuário = " e mostre ao usuário"
 let aSomaDosTotais = " a soma dos totais"
-let deCaracteres = " de caracteres"
+let deCaracteres = " de caracteres "
 
 let caracteresTotal = Crie4variáveis.length + eMostreAoUsuário.length + aSomaDosTotais.length + deCaracteres.length
 console.log(Crie4variáveis + eMostreAoUsuário + aSomaDosTotais + deCaracteres + "=", caracteresTotal)
