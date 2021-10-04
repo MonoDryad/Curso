@@ -20,5 +20,5 @@
 
 
 
-Preciso fazer:
+###### Atividade opcional:
 Permitir que o usuário escreva um objeto em um campo no HTML e, com uma lista de array, adicionar esse objeto a lista e mostrar no HTML com a lista atualizada.
