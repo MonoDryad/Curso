@@ -1,4 +1,4 @@
-  Ajuda:
+Conteúdo da aula
 
 Games:
 Sololearn - https://www.sololearn.com/home
