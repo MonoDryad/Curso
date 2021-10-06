@@ -44,7 +44,7 @@ console.log("")
 console.log("Exercicio 4")
 let numeroAleatorio = 20;
 let numeroAleatorio2 = 30;
-let isValid: boolean = true;
+let isValid = true;
 if(numeroAleatorio >= numeroAleatorio2){
     isValid = false;
     console.log(numeroAleatorio2, isValid)
@@ -152,11 +152,11 @@ console.log(divisao, resultado)
 console.log("")
 console.log("Exercicio 11")
 
-let numeroTotal = 100
+let numeroTotal = Math.floor(Math.random() * 10)
 let numeroDoUsuario = 5
-let percentual = numeroDoUsuario * 100 / numeroTotal
-console.log("Seu valor é de",percentual,"%")
-// Exercicio 11 eu não consegui fazer.
+let percentual = (numeroTotal * 0.05)
+console.log("Seu valor é de",percentual.toFixed(2))
+console.log("Valor do numero total",numeroTotal)
 
 // Exercicio 12
 console.log("")
@@ -168,21 +168,21 @@ let produtos = {
     produto3: "5Kg Feijão",
     produto4: "5kg Macarrão",
     produto5: "2Kg Kiwi",
-    valor1: 15.00,
-    valor2: 8.49,
-    valor3: 32.00,
-    valor4: 46.00,
-    valor5: 13.39,
+    valor1: (Math.random() * 30),
+    valor2: (Math.random() * 30),
+    valor3: (Math.random() * 30),
+    valor4: (Math.random() * 30),
+    valor5: (Math.random() * 30),
 }
 
 let preços = produtos.valor1 + produtos.valor2 + produtos.valor3 + produtos.valor4 + produtos.valor5
 let preço = preços.toFixed(2);
 
-console.log(produtos.produto1, "= R$", produtos.valor1)
-console.log(produtos.produto2, "= R$", produtos.valor2)
-console.log(produtos.produto3, "= R$", produtos.valor3)
-console.log(produtos.produto4, "= R$", produtos.valor4)
-console.log(produtos.produto5, "= R$", produtos.valor5)
+console.log(produtos.produto1, "= R$", produtos.valor1.toFixed(2))
+console.log(produtos.produto2, "= R$", produtos.valor2.toFixed(2))
+console.log(produtos.produto3, "= R$", produtos.valor3.toFixed(2))
+console.log(produtos.produto4, "= R$", produtos.valor4.toFixed(2))
+console.log(produtos.produto5, "= R$", produtos.valor5.toFixed(2))
 
 console.log("Total: R$",preço)
 
