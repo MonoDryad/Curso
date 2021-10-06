@@ -3,9 +3,9 @@ console.log("")
 console.log("Exercicio 1")
 
 let clientes = {
-    nome1: "Amongus,",
-    nome2: "Sus,",
-    nome3: "Cavalo",
+    nome1: "Rai,",
+    nome2: "Ruan,",
+    nome3: "Andrey",
 }
 
 console.log(clientes.nome1, clientes.nome2, clientes.nome3)
@@ -153,6 +153,7 @@ let numeroTotal = 100
 let numeroDoUsuario = 5
 let percentual = numeroDoUsuario * 100 / numeroTotal
 console.log("Seu valor é de",percentual,"%")
+// Exercicio 11 eu não consegui fazer.
 
 // Exercicio 12
 console.log("")
