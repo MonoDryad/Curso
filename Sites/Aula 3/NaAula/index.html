@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrada e Saída de Dados</title>
+    <style>
+        body{
+            background-color: aliceblue;
+            color: #242424;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h1{
+            text-align: center;       
+        }
+
+        p{
+            border:solid 2px #242424;
+            padding: 8px;
+            text-align: center;
+            border-radius: 35px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Entrada e Saída de Dados</h1>
+
+    <p id="lblnome"></p>
+
+    <script>
+        let nome = prompt("Informe um nome")
+        // alert("Seu nome é" + " " + nome + " com um total de " + nome.length + " caracteres")
+        document.getElementById('lblnome').innerHTML = "Seu nome é" + " " + nome + " com um total de " + nome.length + " caracteres"
+    </script>
+</body>
+</html>

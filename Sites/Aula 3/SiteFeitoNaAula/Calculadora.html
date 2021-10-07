@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Calculadora</title>
+    </head>
+
+<body>
+    <h1>Calculadora</h1>
+
+    <br>
+        <label>Valor X</label>
+    <br>
+        <input type="number" id="valorx" onkeyup='numeros()'>
+    <br>
+        <label>Valor Y</label>
+    <br>
+        <input type="number" id="valory" onkeyup='numeros()'>
+    <br>
+    <br>
+        <input type="button" onclick='calcular()'>
+    <br>
+        <label>Resultado</label>
+    <br>
+        <input type="number" id="resultado">
+        <p>
+            Valores!
+            <br>
+            <br>
+            Valor X: <label id="lblnomex"></label>
+            <br>
+            Valor Y: <label id="lblnomey"></label>
+            <br>
+            <br>
+            Resultado: <label id="lblresultado"></label>
+        </p>
+    <script type="text/javascript">
+    function calcular(){
+
+        valorx = document.getElementById('valorx').value
+        valory = document.getElementById('valory').value
+
+        resultado = parseFloat(valorx) + parseFloat(valory)
+
+        document.getElementById('resultado').value = resultado
+        alert('Cálculo realizado com sucesso!')
+        document.getElementById('lblresultado').innerHTML = document.getElementById('resultado').value
+    }
+
+    function numeros(){
+        document.getElementById('lblnomey').innerHTML = document.getElementById('valory').value
+        document.getElementById('lblnomex').innerHTML = document.getElementById('valorx').value
+    }
+    
+    </script>
+</body>
+</html>

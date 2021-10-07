@@ -176,7 +176,6 @@ let produtos = {
 }
 
 let preços = produtos.valor1 + produtos.valor2 + produtos.valor3 + produtos.valor4 + produtos.valor5
-let preço = preços.toFixed(2);
 
 console.log(produtos.produto1, "= R$", produtos.valor1.toFixed(2))
 console.log(produtos.produto2, "= R$", produtos.valor2.toFixed(2))
@@ -184,7 +183,7 @@ console.log(produtos.produto3, "= R$", produtos.valor3.toFixed(2))
 console.log(produtos.produto4, "= R$", produtos.valor4.toFixed(2))
 console.log(produtos.produto5, "= R$", produtos.valor5.toFixed(2))
 
-console.log("Total: R$",preço)
+console.log("Total: R$",preços.toFixed(2))
 
 // Exercicio 13
 console.log("")

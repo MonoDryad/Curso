@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        .btnDiv {
+            border-radius: 3px;
+        }
+
+        .input {
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora Básica</h1>
+    <br><br>
+    <div class="input">
+    <input type="number" id="valorx" placeholder="Valor de X">
+    <input type="number" id="valory" placeholder="Valor de Y">
+    </div>
+    <br><br>
+    <div class="btnDiv">
+        <button onclick="soma()">Somar</button>
+        <button onclick="multiplicar()">Multiplicar</button>
+        <button onclick="expoente()">Potência</button>
+        <button onclick="diminuir()">Diminuir</button>
+        <button onclick="divisão()">Dividir</button>
+        <button onclick="restante()">Restante</button>
+    </div>
+    <br><br>
+    <input class="grande" type="number" id="resultado" placeholder="Resultado" readonly>
+</body>
+<script>
+    const soma = function(){
+        let x = document.getElementById('valorx').value 
+        let y = document.getElementById('valory').value 
+        let resultado = parseFloat(x) + parseFloat(y)
+        document.getElementById('resultado').value = resultado
+    }
+
+    const diminuir = function(){
+        let x = document.getElementById('valorx').value 
+        let y = document.getElementById('valory').value 
+        let resultado = parseFloat(x) - parseFloat(y)
+        document.getElementById('resultado').value = resultado
+    }
+
+    const divisão = function(){
+        let x = document.getElementById('valorx').value 
+        let y = document.getElementById('valory').value 
+        let resultado = parseFloat(x) / parseFloat(y)
+        document.getElementById('resultado').value = resultado
+    }
+
+    const multiplicar = function(){
+        let x = document.getElementById('valorx').value 
+        let y = document.getElementById('valory').value 
+        let resultado = parseFloat(x) * parseFloat(y)
+        document.getElementById('resultado').value = resultado
+    }
+
+    const expoente = function(){
+        let x = document.getElementById('valorx').value 
+        let y = document.getElementById('valory').value 
+        let resultado = parseFloat(x) ** parseFloat(y)
+        document.getElementById('resultado').value = resultado
+    }
+
+    const restante = function(){
+        let x = document.getElementById('valorx').value 
+        let y = document.getElementById('valory').value 
+        let resultado = parseFloat(x) % parseFloat(y)
+        document.getElementById('resultado').value = resultado
+    }
+</script>
+</html>
