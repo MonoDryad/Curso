@@ -14,29 +14,37 @@
             border-radius: 3px;
         }
 
-        .input {
-
+        .corpo {
+            background-color: aquamarine;
+            border-radius: 40px;
+            border-style: groove;
+            border-color: black;
+            background-image: ;
         }
     </style>
 </head>
 <body>
+<div class="corpo">
     <h1>Calculadora Básica</h1>
-    <br><br>
-    <div class="input">
-    <input type="number" id="valorx" placeholder="Valor de X">
-    <input type="number" id="valory" placeholder="Valor de Y">
-    </div>
-    <br><br>
-    <div class="btnDiv">
-        <button onclick="soma()">Somar</button>
-        <button onclick="multiplicar()">Multiplicar</button>
-        <button onclick="expoente()">Potência</button>
-        <button onclick="diminuir()">Diminuir</button>
-        <button onclick="divisão()">Dividir</button>
-        <button onclick="restante()">Restante</button>
-    </div>
-    <br><br>
-    <input class="grande" type="number" id="resultado" placeholder="Resultado" readonly>
+            <br><br>
+        <div class="input">
+            <input type="number" id="valorx" placeholder="Valor de X">
+            <input type="number" id="valory" placeholder="Valor de Y">
+        </div>
+            <br><br>
+        <div class="btnDiv">
+            <button onclick="soma()">Somar</button>
+                <button onclick="multiplicar()">Multiplicar</button>
+                    <button onclick="expoente()">Potência</button>
+                    <button onclick="diminuir()">Diminuir</button>
+                <button onclick="divisão()">Dividir</button>
+            <button onclick="restante()">Restante</button>
+        </div>
+            <br><br>
+        <input class="grande" type="number" id="resultado" placeholder="Resultado" readonly>
+        <br><br>
+        <br><br>
+</div>
 </body>
 <script>
     const soma = function(){
