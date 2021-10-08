@@ -8,10 +8,16 @@
     <style>
         body {
             text-align: center;
+            background-image: url("https://raw.githubusercontent.com/MonoDryad/Curso/main/Mix/wallperper.png");
+            background-repeat: no-repeat;
+            background-color: #222222;
         }
 
-        .btnDiv {
-            border-radius: 3px;
+        .botao {
+            font-style: italic;
+            border-radius: 40px;
+            border-style: groove;
+            font-size: large;
         }
 
         .corpo {
@@ -19,31 +25,51 @@
             border-radius: 40px;
             border-style: groove;
             border-color: black;
-            background-image: ;
+            background-color: #222222;
+            background-image: url("https://raw.githubusercontent.com/MonoDryad/Curso/main/Mix/wallperper.png");
+        }
+
+        .titulo {
+            color: rgb(255, 133, 133);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 45px;
+        }
+
+        .grande {
+            font-size: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            border: rgb(255, 255, 255);
+            border-radius: 10px;
+        }
+
+        .input {
+            font-size: 15;
+            font-family: Arial, Helvetica, sans-serif;
+            border: rgb(255, 255, 255);
+            border-radius: 10px;
         }
     </style>
 </head>
 <body>
 <div class="corpo">
-    <h1>Calculadora Básica</h1>
+    <h1 class="titulo">Calculadora Básica</h1>
+        <input class="grande" type="number" id="resultado" placeholder="Resultado" readonly>
+            <br><br>
+        <div class="btnDiv">
+            <button class="botao" onclick="soma()">Somar</button>
+                <button class="botao" onclick="multiplicar()">Multiplicar</button>
+                    <button class="botao" onclick="expoente()">Potência</button>
+                    <button class="botao" onclick="diminuir()">Diminuir</button>
+                <button class="botao" onclick="divisão()">Dividir</button>
+            <button class="botao" onclick="restante()">Restante</button>
+        </div>
             <br><br>
         <div class="input">
             <input type="number" id="valorx" placeholder="Valor de X">
             <input type="number" id="valory" placeholder="Valor de Y">
         </div>
+
             <br><br>
-        <div class="btnDiv">
-            <button onclick="soma()">Somar</button>
-                <button onclick="multiplicar()">Multiplicar</button>
-                    <button onclick="expoente()">Potência</button>
-                    <button onclick="diminuir()">Diminuir</button>
-                <button onclick="divisão()">Dividir</button>
-            <button onclick="restante()">Restante</button>
-        </div>
-            <br><br>
-        <input class="grande" type="number" id="resultado" placeholder="Resultado" readonly>
-        <br><br>
-        <br><br>
 </div>
 </body>
 <script>
