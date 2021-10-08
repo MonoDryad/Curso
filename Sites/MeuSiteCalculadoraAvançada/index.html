@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculadora Avançada</title>
+</head>
+<body>
+    <div class="corpo">    
+        <h1 class="titulo">Calculadora Avançada</h1>
+    </div>
+    <div class="calculadora">
+        <input class="resultado" id="resultado" type="number" value="" readonly>
+        <div>
+            <br>
+            <button id="expoente" onclick="expoente()">Potência</button>
+            <button id="soma" onclick="soma()">Somar</button>
+            <button id="diminuir" onclick="diminuir()">Subtrair</button>
+            <button id="dividir" onclick="dividir()">Divisão</button>
+            <button id="raiz" onclick="raiz()">Raiz Quadrada</button>
+            <button id="multiplicar" onclick="multiplicar()">Multiplicação</button>
+            <button id="resto" onclick="resto()">Resto</button>
+            <br>
+        </div>
+        <div>
+            <br><br><br>
+            <input class="valorx" id="valorx" type="number" value="" placeholder="Valor X">
+            <input class="valory" id="valory" type="number" value="" placeholder="Valor Y">
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
