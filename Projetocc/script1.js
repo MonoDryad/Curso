@@ -1,5 +1,5 @@
 function jogar(){
-    var audio = new Audio('aud/Chinese among us drip (1h version)-nRJ4_iQPMZo.webm')
+    var audio = new Audio('aud/Chinese Rap Full--lGFpyuuchg.webm')
 audio.addEventListener('canplaythrough', function() {
   audio.play()
 })
@@ -19,9 +19,9 @@ function nexta2(){
     let pper2 = document.querySelector('.pergunta2')
         pper2.style.display = "block"
 
-    let creditoAtual = document.getElementById('creditosSociais').value
-    let creditos = creditoAtual + 15
-    document.getElementById('creditosSociais').innerHTML = creditos
+    var creditoAtual = document.getElementById('creditosSociais').value
+        let creditos = parseFloat(creditoAtual) + parseFloat(15)
+        document.getElementById('creditosSociais').value = creditos
 }
 
 function nexta3(){
@@ -31,6 +31,10 @@ function nexta3(){
 
 let pper3 = document.querySelector('.pergunta3')
     pper3.style.display = "block"
+
+    var creditoAtual = document.getElementById('creditosSociais').value
+    let creditos = parseFloat(creditoAtual) + parseFloat(15)
+    document.getElementById('creditosSociais').value = creditos
 }
 
 function nexta4(){
@@ -40,14 +44,37 @@ function nexta4(){
 
 let pper4 = document.querySelector('.pergunta4')
     pper4.style.display = "block"
+
+    var creditoAtual = document.getElementById('creditosSociais').value
+    let creditos = parseFloat(creditoAtual) + parseFloat(15)
+    document.getElementById('creditosSociais').value = creditos
+}
+
+function resultadoA(){
+
+    let acertou = document.querySelector('.acertou-pergunta')
+    acertou.style.display = "none"
+
+let pper5 = document.querySelector('.labelResultadoA')
+    pper5.style.display = "block"
+
+    var creditoAtual = document.getElementById('creditosSociais').value
+    let creditos = parseFloat(creditoAtual) + parseFloat(15)
+    document.getElementById('creditosSociais').value = creditos
 }
 
 function nextf2(){
     let acertou = document.querySelector('.errou-feio-pergunta')
         acertou.style.display = "none"
 
+        var creditoAtual = document.getElementById('creditosSociais').value
+        let creditos = parseFloat(creditoAtual) - parseFloat(35)
+        document.getElementById('creditosSociais').value = creditos
+
     let pper2 = document.querySelector('.pergunta2')
         pper2.style.display = "block"
+
+
 }
 
 function nextf3(){
@@ -56,6 +83,11 @@ function nextf3(){
 
     let pper2 = document.querySelector('.pergunta3')
         pper2.style.display = "block"
+
+        var creditoAtual = document.getElementById('creditosSociais').value
+        let creditos = parseFloat(creditoAtual) - parseFloat(35)
+        document.getElementById('creditosSociais').value = creditos
+
 }
 
 function nextf4(){
@@ -64,6 +96,11 @@ function nextf4(){
 
     let pper2 = document.querySelector('.pergunta4')
         pper2.style.display = "block"
+
+        var creditoAtual = document.getElementById('creditosSociais').value
+        let creditos = parseFloat(creditoAtual) - parseFloat(35)
+        document.getElementById('creditosSociais').value = creditos
+
 }
 
 function nexte2(){
@@ -72,6 +109,11 @@ function nexte2(){
 
     let pper2 = document.querySelector('.pergunta2')
         pper2.style.display = "block"
+
+        var creditoAtual = document.getElementById('creditosSociais').value
+        let creditos = parseFloat(creditoAtual) - parseFloat(15)
+        document.getElementById('creditosSociais').value = creditos
+
 }
 
 function nexte3(){
@@ -80,6 +122,10 @@ function nexte3(){
 
     let pper2 = document.querySelector('.pergunta3')
         pper2.style.display = "block"
+
+        var creditoAtual = document.getElementById('creditosSociais').value
+        let creditos = parseFloat(creditoAtual) - parseFloat(15)
+        document.getElementById('creditosSociais').value = creditos
 }
 
 function nexte4(){
@@ -88,14 +134,22 @@ function nexte4(){
 
     let pper2 = document.querySelector('.pergunta4')
         pper2.style.display = "block"
+
+        var creditoAtual = document.getElementById('creditosSociais').value
+        let creditos = parseFloat(creditoAtual) - parseFloat(15)
+        document.getElementById('creditosSociais').value = creditos
 }
 
 function nextfailm(){
     let acertou = document.querySelector('.errou-muito-feio-pergunta')
         acertou.style.display = "none"
 
-    let pper2 = document.querySelector('.pergunta2')
+    let pper2 = document.querySelector('.resultadoB')
         pper2.style.display = "block"
+
+        var creditoAtual = document.getElementById('creditosSociais').value
+        let creditos = parseFloat(creditoAtual) - parseFloat(99999999999)
+        document.getElementById('creditosSociais').value = creditos
 }
 
 function puma(){
