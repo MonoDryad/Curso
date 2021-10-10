@@ -5,52 +5,103 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Social Credit Exam</title>
-    <style>
-        body {
-            background-color: #de2910;
-            text-align: center;
-            background-image: url("img/china.jpg");
-        }
-
-        .body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: 35px;
-        }
-
-        .jogar {
-            font-size: 50px;
-            border-radius: 10px;
-        }
-
-        .china{
-            image-resolution: 40;
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="body">
-        <h1 class="h1">
-            Social Credit Exam
+    <div class="container-menu">
+        <h1 class="socialcreditexam">
+            SOCIAL CREDIT EXAM
         </h1>
         <div>
-            <h2>
-                Teste de bom cidadão
-            </h2>
+            <button class="btnJogar" onclick="jogar()">Jogar</button>
+        </div>
+    </div>
+    <div class="pergunta1">
+        <div>
+            <h1 class="pergunta1a">
+                Quantos filhos você tem/pretende ter?
+            </h1>
             <div>
-                <div>
-                    <h3>Pronto?</h3>
-                </div>
-                <div>
-                    <button class="jogar" id="jogar" onclick="jogar()">Sim!</button>
-                </div>
-                <br>
+                <button class="puma" onclick="puma()">1 menino</button>
+                <button class="pumb" onclick="pumb()">1 menina</button>
+                <button class="pumc" onclick="pumc()">2 meninos</button>
+                <button class="pumd" onclick="pumd()">1 menino e 1 menina</button>
+                <button class="pume" onclick="pume()">2 meninas</button>
             </div>
         </div>
     </div>
+    <div class="pergunta2">
+        <h1 class="pergunta2a">
+            O quê aconteçeu em 1989?
+        </h1>
+        <div>
+            <button class="pdoa" onclick="pdoa()">Nada</button>
+            <button class="pdob" onclick="pdob()">Algo</button>
+            <button class="pdoc" onclick="pdoa()">Nada</button>
+            <button class="pdod" onclick="pdoa()">Nada</button>
+            <button class="pdoe" onclick="pdoa()">Nada</button>
+        </div>
+    </div>
+    <div class="pergunta3">
+        <h1 class="pergunta3a">
+            Quantas horas por semana você passa jogando jogos eletrônicos?
+        </h1>
+        <div>
+            <button class="ptra" onclick="ptra()">20 Horas</button>
+            <button class="ptrb" onclick="ptrb()">8 Horas</button>
+            <button class="ptrc" onclick="ptrc()">5 Horas</button>
+            <button class="ptrd" onclick="ptrd()">4 Horas</button>
+            <button class="ptre" onclick="ptre()">3 Horas</button>
+        </div>
+    </div>
+    <div class="pergunta4">
+        <h1 class="pergunta4a">
+            Taiwan é um país?
+        </h1>
+        <div>
+            <button class="pqua" onclick="pqua()">Sim</button>
+            <button class="pqub" onclick="pqub()">Não</button>
+        </div>
+    </div>
+    <div class="corpo-fim-perguntas">
+        <div class="acertou-pergunta">
+            <p class="creditos">+15 Créditos Sociais</p>
+            <img class="setaverde" src="img/setaverde.png">
+            <button class="btnNextaP2" onclick="nexta2()">Próximo</button>
+            <button class="btnNextaP3" onclick="nexta3()">Próximo</button>
+            <button class="btnNextaP4" onclick="nexta4()">Próximo</button>
+            <button class="btnNextaP5" onclick="nexta5()">Próximo</button>
+            <img class="emojifeliz" src="img/ok.png">
+        </div>
+        <div class="errou-pergunta">
+            <p class="creditos">-15 Créditos Sociais</p>
+            <button class="btnNexteP2" onclick="nexte2()">Próximo</button>
+            <button class="btnNexteP3" onclick="nexte3()">Próximo</button>
+            <button class="btnNexteP4" onclick="nexte4()">Próximo</button>
+            <img class="setavermelha" src="img/setavermelha.png">
+        </div>
+        <div class="errou-feio-pergunta">
+            <p class="creditos">-35 Créditos Sociais</p>
+            <button class="btnNextfP2" onclick="nextf2()">Próximo</button>
+            <button class="btnNextfP3" onclick="nextf3()">Próximo</button>
+            <button class="btnNextfP4" onclick="nextf4()">Próximo</button>
+            <img class="setavermelha" src="img/setavermelha.png">
+        </div>
+        <div class="errou-muito-feio-pergunta">
+            <p class="creditos">-99999999999999999 Créditos Sociais</p>
+            <button class="btnNextmP2" onclick="nextfailm()">Resultado</button>
+            <img class="setavermelha" src="img/setavermelha.png">
+        </div>
+    </div class="resultadoA">
+        <label class="labelResultadoA"  id="resultadoA">Você conseguiu um total de </label>
+    <div>
+    <div class="social">
+        <p class="pcreditos">Quantidade de Créditos: </p>
+         <input class="creditosSociais" id="creditosSociais" readonly placeholder="0" value="0">
+    </div>
+
+    </div>
 </body>
-<script>
-    function jogar(){
-        window.location.href = "pergunta1.html"
-    }
+<script src="script1.js">
 </script>
 </html>

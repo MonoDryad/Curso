@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Credit Exam</title>
+    <style>
+        body {
+            background-color: #de2910;
+            text-align: center;
+            background-image: url("img/china.jpg");
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        h1 {
+            font-size: 50px;
+            display: contents;
+        }
+
+        .pergunta {
+            font-size: 30px;
+        }
+
+        button {
+            font-size: 40px;
+        }
+
+        input {
+            font-size: larger;
+            margin-top: 185px; 
+        }
+
+        .proximo1 {
+            display: none;
+            align-self: center;
+        }
+
+        .proximo2 {
+            display: none;
+            align-self: center;
+            /* display: table; */
+        }
+        .acertou {
+            align-content: center;
+            font-size: 80px;
+            color: seashell;
+            display: none;
+            font-family: cursive
+        }
+
+        .acertou1 {
+            display: none ;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="body">
+        <h1>
+            Primeira Pergunta
+        </h1>
+    </div>
+    <div>
+        <p class="pergunta">Quantos filhos você tem/pretende ter?</p>
+        <button class="btnEscolher" onclick="um()">    1</button>
+        <button class="btnEscolher1" onclick="dois()">  2</button>
+        <button class="btnEscolher2" onclick="tres()">  3</button>
+        <button class="btnEscolher3" onclick="quatro()">4</button>
+        <button class="btnEscolher4" onclick="zero()">  0</button>
+    </div>
+
+    <div>
+        <button class="proximo1" onclick="proximo1()">Próximo</button>
+        <br>
+        <p class="acertou">+15 Créditos Sociais</p>
+        <button class="proximo2" onclick="proximo2()">Próximo</button>
+    </div>
+
+    <div>
+        <input class='pontos' id='pontos' readonly value="0">
+    </div>
+    <img class ="acertou1" id="acertou" src="img/ok.png">
+</body>
+<script src="pergunta1.js">
+</script>
+</html>

@@ -1,0 +1,231 @@
+body {
+    background-color: #de2910;
+    text-align: center;
+    background-image: url("img/china.jpg");
+}
+
+.container-menu {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 35px;
+}
+
+.btnJogar {
+    font-size: 50px;
+    border-radius: 10px;
+}
+
+.china{
+    image-resolution: 40;
+}
+
+.box-fundo {
+    display: none;
+    margin-top: auto
+}
+
+.pergunta1 {
+    display: none;
+    font-size: 35px;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.pergunta2 {
+    display: none;
+    font-size: 35px;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.pergunta3 {
+    display: none;
+    font-size: 35px;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.pergunta4 {
+    display: none;
+    font-size: 35px;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.acertou-pergunta {
+    display: none;
+}
+
+.errou-pergunta {
+    display: none;
+}
+
+.errou-feio-pergunta {
+    display: none;
+}
+
+.errou-muito-feio-pergunta {
+    display: none;
+}
+
+.corpo-fim-perguntas {
+    font-size: 100px;
+    color: rgb(255, 255, 255);
+    font-family: cursive;
+}
+
+.btnNextaP2 {
+    font-size: 30px;
+    display: none;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+}
+
+.btnNextaP3 {
+    font-size: 30px;
+    display: none;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+}
+
+.btnNextaP4 {
+    font-size: 30px;
+    display: none;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+}
+
+.btnNexteP2 {
+    font-size: 30px;
+    display: none;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+}
+
+.btnNexteP3 {
+    font-size: 30px;
+    display: none;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+}
+
+.btnNexteP4 {
+    font-size: 30px;
+    display: none;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+}
+
+.btnNexteP5 {
+    font-size: 30px;
+    display: none;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+}
+
+
+.btnNextfP2 {
+    font-size: 30px;
+    display: none;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+}
+
+.btnNextfP3 {
+    font-size: 30px;
+    display: none;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+}
+
+
+.btnNextfP4 {
+    font-size: 30px;
+    display: none;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+}
+
+.btnNextmP2 {
+    font-size: 30px;
+    display: none;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+}
+
+.setaverde {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: 18px;
+}
+
+.setavermelha {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: 18px;
+}
+
+.emojifeliz {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 18px;
+}
+
+.btnNextaP5 {
+    font-size: 30px;
+    display: none;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+}
+
+.labelResultadoA {
+    display: none;
+    font-size: 35px;
+    color: blanchedalmond;
+}
+
+.social {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+}
