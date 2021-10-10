@@ -70,7 +70,7 @@
             <button class="btnNextaP2" onclick="nexta2()">Próximo</button>
             <button class="btnNextaP3" onclick="nexta3()">Próximo</button>
             <button class="btnNextaP4" onclick="nexta4()">Próximo</button>
-            <button class="btnNextaP5" onclick="resultadoA()">Resultado</button>
+            <button class="btnNextaP5" onclick="proximoFim()">Próximo</button>
             <img class="emojifeliz" src="img/ok.png">
         </div>
         <div class="errou-pergunta">
@@ -89,20 +89,32 @@
         </div>
         <div class="errou-muito-feio-pergunta">
             <p class="creditos">-99999999999999999 Créditos Sociais</p>
-            <button class="btnNextmP2" onclick="nextfailm()">Resultado</button>
+            <button class="btnNextmP2" onclick="proximoFim()">Próximo</button>
             <img class="setavermelha" src="img/setavermelha.png">
+        </div>
+        <div class="proximo-fim">
+            <p class="fimTexto">Sua execução será amanhã ao meio dia!</p>
+            <button class="fim2b" onclick="fim2()">Resetar</button>
+            <img class="emojifeliz" src="img/ok.png">
         </div>
     </div class="resultadoA">
     <p class="labelResultadoA"  id="resultadoA">Você conseguiu um total de </p>
+    <button class="fim2a" onclick="fim2()">Resetar</button>
     <div>
     </div class="resultadoB">
-        <p class="labelResultadoA"  id="resultadoA">Você conseguiu um total de </p>
+        <p class="labelResultadoB"  id="labelResultadoB">Você conseguiu um total de </p>
     <div>
+        <button class="fim2" onclick="proximoFim()">Proximo</button>
     <div class="social">
         <p class="pcreditos">Quantidade de Créditos: </p>
          <input class="creditosSociais" id="creditosSociais" readonly placeholder="0" value="0">
     </div>
-
+    </div class="resultadoAb">
+        <p class="labelResultadoAb"  id="resultadoA">Créditos Social </p>
+    <div>
+    </div class="resultadoAb">
+        <p class="labelResultadoBa"  id="resultadoB">Créditos Social </p>
+    <div>
     </div>
 </body>
 <script src="script1.js">

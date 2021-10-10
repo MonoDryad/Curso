@@ -222,10 +222,46 @@ body {
     color: blanchedalmond;
 }
 
+.labelResultadoAb {
+    display: none;
+    font-size: 35px;
+    color: blanchedalmond;
+}
+
 .social {
     position: absolute;
     top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 18px;
+}
+
+.labelResultadoB {
+    display: none;
+    font-size: 35px;
+    color: blanchedalmond;
+}
+
+.labelResultadoBa {
+    display: none;
+    font-size: 35px;
+    color: blanchedalmond;
+}
+
+.proximo-fim {
+    display: none;
+}
+
+.fim2a {
+    display: none;
+}
+
+.fim2 {
+    font-size: 30px;
+    display: none;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px; 
 }
