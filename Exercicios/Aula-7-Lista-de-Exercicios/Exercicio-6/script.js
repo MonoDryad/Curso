@@ -13,33 +13,42 @@
 
 
 function verificar(){
-    let valorx = document.getElementById('valorx').value
-    let valory = document.getElementById('valory').value
+    let calculoa = document.getElementById('valorx').value * document.getElementById('valory').value
 
-    let calculoa = valorx * valory
-
-    if(calculoa >= 1903.98){4
-        alert('1903.98')
-        document.getElementById('fim').value = calculoa
+    if(calculoa >= 1903.98){
         if(calculoa >= 1903.99){
-            alert('1903.99')
             document.getElementById('fim').value = calculoa
+            let calculob = calculoa * 0.075
+            document.getElementById('fim2').value = calculob
+            let calculoc = calculoa - calculob
+            document.getElementById('fim3').value = calculoc
+
             if(calculoa >= 2826.66){
-                alert('2826.66')
                 document.getElementById('fim').value = calculoa
+                let calculoba = calculoa * 0.15
+                document.getElementById('fim2').value = calculoba
+                let calculoca = calculoa - calculoba
+                document.getElementById('fim3').value = calculoca
+
                 if(calculoa >= 3751.06){
-                    alert('3751.06')
                     document.getElementById('fim').value = calculoa
-                }else{
-                    document.getElementById('fim').value = calculoa
+                    let calculobb = calculoa * 0.225
+                    document.getElementById('fim2').value = calculobb
+                    let calculocb = calculoa - calculobb
+                    document.getElementById('fim3').value = calculocb
+
+                    if(calculoa >= 4664.68){
+                        document.getElementById('fim').value = calculoa
+                        let calculobc = calculoa * 0.275
+                        document.getElementById('fim2').value = calculobc
+                        let calculocc = calculoa - calculobc
+                        document.getElementById('fim3').value = calculocc
+                        
+                    }
                 }
-            }else{
-                document.getElementById('fim').value = calculoa
             }
-        }else{
-            document.getElementById('fim').value = calculoa  
-            }
+        }
     }else{
-    document.getElementById('fim').value = calculoa
+        document.getElementById('fim').value = "Seu salário não muda."
     }
 }

@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Exercicio 4</title>
 </head>
 <body>
     <div>
-        <h1>Exercício 4</h1>
-        <div>
+        <header>
+            <h1>Exercício 4</h1>
+        </header>
+        <div class="container">
             Insira ao valor
             <div>
                 <input type="number" id="valorx" placeholder="Shampoo A">
@@ -19,9 +22,9 @@
                     <button onclick="verificar()">Verificar</button>
                 </div>
             </div>
-            <input type="text" id="resultado" placeholder="Shampoo A" readonly>
-            <input type="text" id="resultadob" placeholder="Shampoo B" readonly>
-            <input type="text" id="resultadoc" placeholder="Total" readonly>
+            <input type="text" id="resultado" placeholder="Shampoo A" class="sa" readonly>
+            <input type="text" id="resultadob" placeholder="Shampoo B" class="sa" readonly>
+            <input type="text" id="resultadoc" placeholder="Total" class="sa" readonly>
         </div>
     </div>
 </body>
