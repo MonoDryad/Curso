@@ -17,31 +17,31 @@ function setProduto(){
         paragrafo.textContent = 'Você selecionou a opção: ' + opcao
         nome.textContent = 'Nome: ' + opcao + ' de Cavalo'
         descrição.textContent = 'Shampoo perfeito para você'
-        preço.textContent = 'Preço: RS$27,00'
+        preço.textContent = 'Preço: R$27,00'
         estoque.textContent = 'Estoque: 102'
     }else if(opcao === 'Acessorios'){
         paragrafo.textContent = 'Você selecionou a opção: ' + opcao
         nome.textContent = 'Nome: ' + opcao + ' de Cachorro'
         descrição.textContent = 'Acessório para cachorro!'
-        preço.textContent = 'Preço: RS$52,00'
+        preço.textContent = 'Preço: R$52,00'
         estoque.textContent = 'Estoque: 3'
     }else if(opcao === 'Maquiagem'){
         paragrafo.textContent = 'Você selecionou a opção: ' + opcao
         nome.textContent = 'Nome: ' + opcao + ' para Ovelhas'
         descrição.textContent = 'Ovelhas maquiadas (bonecos)'
-        preço.textContent = 'Preço: RS$84,99'
+        preço.textContent = 'Preço: R$84,99'
         estoque.textContent = 'Estoque: 0'
     }else if(opcao === 'Relogios'){
         paragrafo.textContent = 'Você selecionou a opção: ' + opcao
         nome.textContent = 'Nome: ' + opcao + ' colorido'
         descrição.textContent = 'Relógio coloridinho para seu filho!'
-        preço.textContent = 'Preço: RS$8,00'
+        preço.textContent = 'Preço: R$8,00'
         estoque.textContent = 'Estoque: 674'
     }else if(opcao === 'Colar'){
         paragrafo.textContent = 'Você selecionou a opção: ' + opcao
         nome.textContent = 'Nome: ' + opcao + ' de Cavalo'
         descrição.textContent = 'Colar perfeito para você'
-        preço.textContent = 'Preço: RS$34,00'
+        preço.textContent = 'Preço: R$34,00'
         estoque.textContent = 'Estoque: 3'
     }
 }
