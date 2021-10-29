@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Exercicio 7</title>
 </head>
 <body>
-    <div>
+    <header>
         <h1>Exercício 7</h1>
-        <div>
+    </header>
+    <div class="container">
+        <div class="container-head">
             <label>Selecione um produto</label>
             <select id="produto">
                 <option value="Shampoo">Shampoo</option>
@@ -19,11 +22,13 @@
                 <option value="Colar">Colar</option>
             </select>
         </div>
-        <p></p>
-        <p id="nome"></p>
-        <p id="descrição"></p>
-        <p id="preço"></p>
-        <p id="estoque"></p>
+        <div class="container-content">
+            <p></p>
+            <p id="nome"></p>
+            <p id="descrição"></p>
+            <p id="preço"></p>
+            <p id="estoque"></p>
+        </div>
     </div>  
 </body>
 <script src="./script.js"></script>
