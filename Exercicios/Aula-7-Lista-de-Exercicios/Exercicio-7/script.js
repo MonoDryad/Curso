@@ -5,7 +5,6 @@
 
 let select = document.querySelector('select')
 var paragrafo = document.querySelector('p')
-var paragrafo2 = document.querySelector('nome')
 
 select.addEventListener('change', setProduto)
 
