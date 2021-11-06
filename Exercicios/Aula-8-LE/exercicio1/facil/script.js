@@ -8,45 +8,51 @@ function setProduto(){
 
     console.log(opcao)
 
-    if(opcao === 'Nenhum'){
+    switch(opcao){
+    default:
         paragrafo.textContent = 'Escolha uma opção!'
         nome.textContent = 'Nome:'
         descrição.textContent = 'Descrição:'
         cdo.textContent = 'Código de Origem:'
         pre = 8
-    }else if(opcao === 'Shampoo'){
+        break
+    case 'Shampoo':
         paragrafo.textContent = 'Você selecionou a opção: ' + opcao
         nome.textContent = 'Nome: ' + opcao + ' de Cavalo'
         descrição.textContent = 'Descrição: Shampoo perfeito para você'
         cdo.textContent = 'Código de Origem: ' + '2'
         pre = 2
-    }else if(opcao === 'Acessorios'){
+        break
+    case 'Acessorios':
         paragrafo.textContent = 'Você selecionou a opção: ' + opcao
         nome.textContent = 'Nome: ' + opcao + ' de Cachorro'
         descrição.textContent = 'Descrição: Acessório para cachorro!'
         cdo.textContent = 'Código de Origem: ' + '0'
         pre = 0
-    }else if(opcao === 'Maquiagem'){
+        break
+    case 'Maquiagem':
         paragrafo.textContent = 'Você selecionou a opção: ' + opcao
         nome.textContent = 'Nome: ' + opcao + ' para Ovelhas'
         descrição.textContent = 'Descrição: Ovelhas maquiadas (bonecos)'
         cdo.textContent = 'Código de Origem: ' + '1'
         pre = 1
-    }else if(opcao === 'Relogios'){
+        break
+    case 'Relogios':
         paragrafo.textContent = 'Você selecionou a opção: ' + opcao
         nome.textContent = 'Nome: ' + opcao + ' colorido'
         descrição.textContent = 'Descrição: Relógio coloridinho para seu filho!'
         cdo.textContent = 'Código de Origem: ' + '7'
         pre = 7
-    }else if(opcao === 'Colar'){
+        break
+    case 'Colar':
         paragrafo.textContent = 'Você selecionou a opção: ' + opcao
         nome.textContent = 'Nome: ' + opcao + ' de Cavalo'
         descrição.textContent = 'Descrição: Colar perfeito para você'
         cdo.textContent = 'Código de Origem: ' + '4'
         pre = 4
+        break
     }
 }
-
 function verificar(){
     console.log(pre)
     switch(pre){
