@@ -14,6 +14,9 @@ var vineboom = new Audio('audio/vine-boom.mp3')
 var vineboombass = new Audio('audio/dam4rqxu2ywicjk1.mp3')
 var ok = new Audio('audio/my-song-2_2.mp3')
 var nightmare = new Audio('audio/kitchen-nightmare-dramatic-sound-effect.mp3')
+var aaaa = new Audio('audio/videoplayback.mp3')
+var superidolv = new Audio('audio/2.mp3')
+var musica = new Audio('audio/musica.mp3')
 
 // Boolean que vai permitir a proxima pergunta - A outra serve para mostar o resultado
 let mostrarResultado = false
@@ -28,6 +31,15 @@ let creditohtml = document.getElementById('credito')
 let começarbotao = document.getElementById('começarb')
 
 // input das respostas e os textos
+let imgok = document.getElementById('ok')
+let imgverme = document.getElementById('setaverme')
+let imgverde = document.getElementById('setaverde')
+let imgr = document.getElementById('imgrface')
+let imgrdw = document.getElementById('imgrdwface')
+let imgrhappy = document.getElementById('imgrhappy')
+let imgscary = document.getElementById('imgscary')
+let imgbye = document.getElementById('imgbye')
+let imgsuperidol = document.getElementById('imgsuperidol')
 let inputresposta1 = document.getElementById('inputpresposta1')
 let inputresposta2 = document.getElementById('inputpresposta2')
 let inputresposta3 = document.getElementById('inputpresposta3')
@@ -52,6 +64,7 @@ let proximo = document.getElementById('proximaquestao')
 
 // a função que vai começar o quiz
 const começar = function () {
+
     // Mudança no CSS
     começarbotao.style.display = 'none'
     inputresposta1.style.display = 'inline'
@@ -75,7 +88,8 @@ const começar = function () {
     resposta5.innerHTML = '16 horas'
 
     // tocar super idol
-    superidol.play()
+    musica.play()
+    musica.volume = 0.1
 }
 
 // Próxima questão
@@ -93,6 +107,14 @@ function proximaquestao(){
             resultado.style.display = 'none'
             resultado.textContent = ''
             proximo.style.display = 'none'
+            imgok.style.display = 'none'
+            imgverde.style.display = 'none'
+            imgverme.style.display = 'none'
+            imgrhappy.style.display = 'none'
+            imgrdw.style.display = 'none'
+            imgbye.style.display = 'none'
+            imgscary.style.display = 'none'
+            imgr.style.display = 'none'
 
             // Mudança no CSS
             inputresposta1.style.display = 'inline'
@@ -122,6 +144,14 @@ function proximaquestao(){
             resultado.style.display = 'none'
             resultado.textContent = ''
             proximo.style.display = 'none'
+            imgok.style.display = 'none'
+            imgverde.style.display = 'none'
+            imgverme.style.display = 'none'
+            imgrhappy.style.display = 'none'
+            imgrdw.style.display = 'none'
+            imgbye.style.display = 'none'
+            imgscary.style.display = 'none'
+            imgr.style.display = 'none'
 
             // Mudança no CSS
             inputresposta1.style.display = 'inline'
@@ -145,6 +175,14 @@ function proximaquestao(){
             resultado.style.display = 'none'
             resultado.textContent = ''
             proximo.style.display = 'none'
+            imgok.style.display = 'none'
+            imgverde.style.display = 'none'
+            imgverme.style.display = 'none'
+            imgrhappy.style.display = 'none'
+            imgrdw.style.display = 'none'
+            imgbye.style.display = 'none'
+            imgscary.style.display = 'none'
+            imgr.style.display = 'none'
     
             // Mudança no CSS
             inputresposta1.style.display = 'inline'
@@ -175,6 +213,14 @@ function proximaquestao(){
             resultado.style.display = 'none'
             resultado.textContent = ''
             proximo.style.display = 'none'
+            imgok.style.display = 'none'
+            imgverde.style.display = 'none'
+            imgverme.style.display = 'none'
+            imgrhappy.style.display = 'none'
+            imgrdw.style.display = 'none'
+            imgbye.style.display = 'none'
+            imgscary.style.display = 'none'
+            imgr.style.display = 'none'
     
             // Mudança no CSS
             inputresposta1.style.display = 'inline'
@@ -198,6 +244,15 @@ function proximaquestao(){
             resultado.style.display = 'none'
             resultado.textContent = ''
             proximo.style.display = 'none'
+            imgok.style.display = 'none'
+            imgverde.style.display = 'none'
+            imgverme.style.display = 'none'
+            imgrhappy.style.display = 'none'
+            imgrdw.style.display = 'none'
+            imgbye.style.display = 'none'
+            imgscary.style.display = 'none'
+            imgr.style.display = 'none'
+            
             let execucaodia = dia + 1
             let execucaohoras = horas + 1
             let execucaominutos = '00'
@@ -218,9 +273,41 @@ function proximaquestao(){
                     break
                 case 2:
                     final.innerHTML = 'Você conseguiu um total de ' + parseFloat(creditohtml.value) + ' créditos sociais!'
+                    imgsuperidol.style.display = 'inline'
+                    imgsuperidol.style.position = 'absolute'
+                    imgsuperidol.style.top = '50%'
+                    imgsuperidol.style.left = '30%'
+                    imgsuperidol.style.right = '70%'
+                    imgsuperidol.style.bottom = '50%'
+                    imgsuperidol.style.width = '240px'
+                    imgsuperidol.style.height = 'auto'
+
+                    superidolv.play()
                     break
                 default:
                     final.innerHTML = '你總共有 ' + parseFloat(creditohtml.value) + ' 個社會學分。其執行將在當天進行: ' + execucaohoras + ":" + execucaominutos + " " + execucaodia + "/" + mes + "/" + ano
+                    imgscary.style.display = 'inline'
+                    imgscary.style.position = 'absolute'
+                    imgscary.style.top = '50%'
+                    imgscary.style.bottom = '50%'
+                    imgscary.style.left = '65%'
+                    imgscary.style.right = '35%'
+                    imgverme.style.display = 'inline'
+                    imgverme.style.position = 'absolute'
+                    imgverme.style.top = '45%'
+                    imgverme.style.left = '0%'
+                    imgverme.style.right = '100%'
+                    imgverme.style.bottom = '55%'
+                    imgbye.style.display = 'inline'
+                    imgbye.style.position = 'absolute'
+                    imgbye.style.top = '50%'
+                    imgbye.style.left = '30%'
+                    imgbye.style.right = '70%'
+                    imgbye.style.bottom = '50%'
+                    imgbye.style.width = '240px'
+                    imgbye.style.height = 'auto'
+
+                    aaaa.play()
             }
     }
 }
@@ -261,6 +348,28 @@ const verificarresposta = function () {
             // colocando a próxima pergunta
             mostrarResultado = true
             ok.play()
+
+            // imagens
+            imgok.style.display = 'inline'
+            imgok.style.position = 'absolute'
+            imgok.style.top = '50%'
+            imgok.style.bottom = '50%'
+            imgok.style.left = '65%'
+            imgok.style.right = '35%'
+            imgverde.style.display = 'inline'
+            imgverde.style.position = 'absolute'
+            imgverde.style.top = '45%'
+            imgverde.style.left = '0%'
+            imgverde.style.right = '100%'
+            imgverde.style.bottom = '55%'
+            imgrhappy.style.display = 'inline'
+            imgrhappy.style.position = 'absolute'
+            imgrhappy.style.top = '50%'
+            imgrhappy.style.left = '30%'
+            imgrhappy.style.right = '70%'
+            imgrhappy.style.bottom = '50%'
+            imgrhappy.style.width = '240px'
+            imgrhappy.style.height = 'auto'
             break
         default:
             // adicionando o valor perdido por errar
@@ -270,6 +379,28 @@ const verificarresposta = function () {
             // colocando a próxima pergunta
             mostrarResultado = false
             vineboom.play()
+
+            // imagens
+            imgscary.style.display = 'inline'
+            imgscary.style.position = 'absolute'
+            imgscary.style.top = '50%'
+            imgscary.style.bottom = '50%'
+            imgscary.style.left = '65%'
+            imgscary.style.right = '35%'
+            imgverme.style.display = 'inline'
+            imgverme.style.position = 'absolute'
+            imgverme.style.top = '45%'
+            imgverme.style.left = '0%'
+            imgverme.style.right = '100%'
+            imgverme.style.bottom = '55%'
+            imgr.style.display = 'inline'
+            imgr.style.position = 'absolute'
+            imgr.style.top = '50%'
+            imgr.style.left = '30%'
+            imgr.style.right = '70%'
+            imgr.style.bottom = '50%'
+            imgr.style.width = '240px'
+            imgr.style.height = 'auto'
     }
     // switch case adicionando o resultado na tela
     switch(mostrarResultado){
@@ -330,6 +461,28 @@ const verificarresposta2 = function () {
             // colocando a próxima pergunta
             mostrarResultado = true
             ok.play()
+
+                        // imagens
+            imgok.style.display = 'inline'
+            imgok.style.position = 'absolute'
+            imgok.style.top = '50%'
+            imgok.style.bottom = '50%'
+            imgok.style.left = '65%'
+            imgok.style.right = '35%'
+            imgverde.style.display = 'inline'
+            imgverde.style.position = 'absolute'
+            imgverde.style.top = '45%'
+            imgverde.style.left = '0%'
+            imgverde.style.right = '100%'
+            imgverde.style.bottom = '55%'
+            imgrhappy.style.display = 'inline'
+            imgrhappy.style.position = 'absolute'
+            imgrhappy.style.top = '50%'
+            imgrhappy.style.left = '30%'
+            imgrhappy.style.right = '70%'
+            imgrhappy.style.bottom = '50%'
+            imgrhappy.style.width = '240px'
+            imgrhappy.style.height = 'auto'
             break
         case 'extremoerrado':
             // adicionando o valor ganho por acertar
@@ -337,6 +490,28 @@ const verificarresposta2 = function () {
             creditohtml.value = parseFloat(creditohtml.value) - parseFloat(credito)
             mostrarResultado = false
             vineboombass.play()
+
+            // imagens
+            imgscary.style.display = 'inline'
+            imgscary.style.position = 'absolute'
+            imgscary.style.top = '50%'
+            imgscary.style.bottom = '50%'
+            imgscary.style.left = '65%'
+            imgscary.style.right = '35%'
+            imgverme.style.display = 'inline'
+            imgverme.style.position = 'absolute'
+            imgverme.style.top = '45%'
+            imgverme.style.left = '0%'
+            imgverme.style.right = '100%'
+            imgverme.style.bottom = '55%'
+            imgrdw.style.display = 'inline'
+            imgrdw.style.position = 'absolute'
+            imgrdw.style.top = '50%'
+            imgrdw.style.left = '30%'
+            imgrdw.style.right = '70%'
+            imgrdw.style.bottom = '50%'
+            imgrdw.style.width = '240px'
+            imgrdw.style.height = 'auto'
             break
         default:
             // adicionando o valor perdido por errar
@@ -344,6 +519,28 @@ const verificarresposta2 = function () {
             creditohtml.value = parseFloat(creditohtml.value) - parseFloat(credito)
             mostrarResultado = false
             vineboom.play()
+
+            // imagens
+            imgscary.style.display = 'inline'
+            imgscary.style.position = 'absolute'
+            imgscary.style.top = '50%'
+            imgscary.style.bottom = '50%'
+            imgscary.style.left = '65%'
+            imgscary.style.right = '35%'
+            imgverme.style.display = 'inline'
+            imgverme.style.position = 'absolute'
+            imgverme.style.top = '45%'
+            imgverme.style.left = '0%'
+            imgverme.style.right = '100%'
+            imgverme.style.bottom = '55%'
+            imgr.style.display = 'inline'
+            imgr.style.position = 'absolute'
+            imgr.style.top = '50%'
+            imgr.style.left = '30%'
+            imgr.style.right = '70%'
+            imgr.style.bottom = '50%'
+            imgr.style.width = '240px'
+            imgr.style.height = 'auto'
     }
     // switch case adicionando o resultado na tela
     switch(mostrarResultado){
@@ -403,6 +600,28 @@ const verificarresposta3 = function () {
             // colocando a próxima pergunta
             mostrarResultado = true
             ok.play()
+
+            // imagens
+            imgok.style.display = 'inline'
+            imgok.style.position = 'absolute'
+            imgok.style.top = '50%'
+            imgok.style.bottom = '50%'
+            imgok.style.left = '65%'
+            imgok.style.right = '35%'
+            imgverde.style.display = 'inline'
+            imgverde.style.position = 'absolute'
+            imgverde.style.top = '45%'
+            imgverde.style.left = '0%'
+            imgverde.style.right = '100%'
+            imgverde.style.bottom = '55%'
+            imgrhappy.style.display = 'inline'
+            imgrhappy.style.position = 'absolute'
+            imgrhappy.style.top = '50%'
+            imgrhappy.style.left = '30%'
+            imgrhappy.style.right = '70%'
+            imgrhappy.style.bottom = '50%'
+            imgrhappy.style.width = '240px'
+            imgrhappy.style.height = 'auto'
             break
         default:
             // adicionando o valor perdido por errar
@@ -412,6 +631,28 @@ const verificarresposta3 = function () {
             // colocando a próxima pergunta
             mostrarResultado = false
             ohmygod.play()
+
+            // imagens
+            imgscary.style.display = 'inline'
+            imgscary.style.position = 'absolute'
+            imgscary.style.top = '50%'
+            imgscary.style.bottom = '50%'
+            imgscary.style.left = '65%'
+            imgscary.style.right = '35%'
+            imgverme.style.display = 'inline'
+            imgverme.style.position = 'absolute'
+            imgverme.style.top = '45%'
+            imgverme.style.left = '0%'
+            imgverme.style.right = '100%'
+            imgverme.style.bottom = '55%'
+            imgr.style.display = 'inline'
+            imgr.style.position = 'absolute'
+            imgr.style.top = '50%'
+            imgr.style.left = '30%'
+            imgr.style.right = '70%'
+            imgr.style.bottom = '50%'
+            imgr.style.width = '240px'
+            imgr.style.height = 'auto'
     }
     // switch case adicionando o resultado na tela
     switch(mostrarResultado){
@@ -472,6 +713,29 @@ const verificarresposta4 = function () {
             
             // colocando a próxima pergunta
             mostrarResultado = true
+            ok.play()
+
+            // imagens
+            imgok.style.display = 'inline'
+            imgok.style.position = 'absolute'
+            imgok.style.top = '50%'
+            imgok.style.bottom = '50%'
+            imgok.style.left = '65%'
+            imgok.style.right = '35%'
+            imgverde.style.display = 'inline'
+            imgverde.style.position = 'absolute'
+            imgverde.style.top = '45%'
+            imgverde.style.left = '0%'
+            imgverde.style.right = '100%'
+            imgverde.style.bottom = '55%'
+            imgrhappy.style.display = 'inline'
+            imgrhappy.style.position = 'absolute'
+            imgrhappy.style.top = '50%'
+            imgrhappy.style.left = '30%'
+            imgrhappy.style.right = '70%'
+            imgrhappy.style.bottom = '50%'
+            imgrhappy.style.width = '240px'
+            imgrhappy.style.height = 'auto'
             break
         default:
             // adicionando o valor perdido por errar
@@ -483,6 +747,28 @@ const verificarresposta4 = function () {
             vineboombass.play()
             nightmare.play()
             ohmygod.play()
+
+            // imagens
+            imgscary.style.display = 'inline'
+            imgscary.style.position = 'absolute'
+            imgscary.style.top = '50%'
+            imgscary.style.bottom = '50%'
+            imgscary.style.left = '65%'
+            imgscary.style.right = '35%'
+            imgverme.style.display = 'inline'
+            imgverme.style.position = 'absolute'
+            imgverme.style.top = '45%'
+            imgverme.style.left = '0%'
+            imgverme.style.right = '100%'
+            imgverme.style.bottom = '55%'
+            imgr.style.display = 'inline'
+            imgr.style.position = 'absolute'
+            imgr.style.top = '50%'
+            imgr.style.left = '30%'
+            imgr.style.right = '70%'
+            imgr.style.bottom = '50%'
+            imgr.style.width = '240px'
+            imgr.style.height = 'auto'
     }
     // switch case adicionando o resultado na tela
     switch(mostrarResultado){
@@ -541,8 +827,29 @@ const verificarresposta5 = function () {
             
             // colocando a próxima pergunta
             mostrarResultado = true
-            superidol.play()
             ok.play()
+
+            // imagens
+            imgok.style.display = 'inline'
+            imgok.style.position = 'absolute'
+            imgok.style.top = '50%'
+            imgok.style.bottom = '50%'
+            imgok.style.left = '65%'
+            imgok.style.right = '35%'
+            imgverde.style.display = 'inline'
+            imgverde.style.position = 'absolute'
+            imgverde.style.top = '45%'
+            imgverde.style.left = '0%'
+            imgverde.style.right = '100%'
+            imgverde.style.bottom = '55%'
+            imgrhappy.style.display = 'inline'
+            imgrhappy.style.position = 'absolute'
+            imgrhappy.style.top = '50%'
+            imgrhappy.style.left = '30%'
+            imgrhappy.style.right = '70%'
+            imgrhappy.style.bottom = '50%'
+            imgrhappy.style.width = '240px'
+            imgrhappy.style.height = 'auto'
             break
         case 'impossivel':
             // adicionando o valor ganho por acertar
@@ -554,6 +861,28 @@ const verificarresposta5 = function () {
             vineboombass.play()
             nightmare.play()
             ohmygod.play()
+
+            // imagens
+            imgscary.style.display = 'inline'
+            imgscary.style.position = 'absolute'
+            imgscary.style.top = '50%'
+            imgscary.style.bottom = '50%'
+            imgscary.style.left = '65%'
+            imgscary.style.right = '35%'
+            imgverme.style.display = 'inline'
+            imgverme.style.position = 'absolute'
+            imgverme.style.top = '45%'
+            imgverme.style.left = '0%'
+            imgverme.style.right = '100%'
+            imgverme.style.bottom = '55%'
+            imgrdw.style.display = 'inline'
+            imgrdw.style.position = 'absolute'
+            imgrdw.style.top = '50%'
+            imgrdw.style.left = '30%'
+            imgrdw.style.right = '70%'
+            imgrdw.style.bottom = '50%'
+            imgrdw.style.width = '240px'
+            imgrdw.style.height = 'auto'
             break
         default:
             // adicionando o valor perdido por errar
@@ -563,6 +892,28 @@ const verificarresposta5 = function () {
             // colocando a próxima pergunta
             mostrarResultado = true
             ok.play()
+
+            // imagens
+            imgok.style.display = 'inline'
+            imgok.style.position = 'absolute'
+            imgok.style.top = '50%'
+            imgok.style.bottom = '50%'
+            imgok.style.left = '65%'
+            imgok.style.right = '35%'
+            imgverde.style.display = 'inline'
+            imgverde.style.position = 'absolute'
+            imgverde.style.top = '45%'
+            imgverde.style.left = '0%'
+            imgverde.style.right = '100%'
+            imgverde.style.bottom = '55%'
+            imgrhappy.style.display = 'inline'
+            imgrhappy.style.position = 'absolute'
+            imgrhappy.style.top = '50%'
+            imgrhappy.style.left = '30%'
+            imgrhappy.style.right = '70%'
+            imgrhappy.style.bottom = '50%'
+            imgrhappy.style.width = '240px'
+            imgrhappy.style.height = 'auto'
     }
     // switch case adicionando o resultado na tela
     switch(mostrarResultado){

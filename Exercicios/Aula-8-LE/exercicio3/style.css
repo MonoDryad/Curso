@@ -48,7 +48,12 @@ footer{
     border-top: 2px solid #7a0606;
     position:absolute;
     bottom:0;
-    width:99.4%;
+    left:0;
+    right:0;
+    height: 70px;
+}
+footer label{
+    text-align: center;
 }
 
 .inicio{
@@ -83,24 +88,18 @@ footer{
 	top:1px;
 }
 
-
 a{
     font-size: 22px;
-    position:absolute;
-    left:90%;
-    bottom: 0;
     text-decoration: none;
 }
 
 a:link{
     color: rgb(255, 255, 255);
-    text-align: right;
     text-decoration: none;
 }
 
 a:visited{
     color: rgb(255, 255, 255);
-    text-align: right;
     text-decoration: none;
 }
 
@@ -108,7 +107,7 @@ a:hover {
     text-decoration: underline;
 }
 
-  a:active {
+a:active {
     text-decoration: underline;
 }
 
@@ -120,6 +119,7 @@ a:hover {
     border: rgb(0, 0, 0) solid 2px;
     background-color:rgb(46, 36, 36);
     margin-top: 30px;
+    height: 200px;
 }
 
 a{
@@ -130,3 +130,44 @@ a{
     text-decoration: none;
 }
 
+.imgok{
+    display: none;
+}
+
+.imgverde{
+    display: none;
+}
+
+.imgverme{
+    display: none;
+}
+
+.imgrface{
+    display: none;
+}
+
+.imgrdwface{
+    display: none;
+}
+
+.imgrhappy{
+    display: none;
+}
+
+.imgscary{
+    display: none;
+}
+
+.imgbye{
+    display: none;
+}
+
+.imgsuperidol{
+    display: none;
+}
+
+@media screen and (max-width: 650px) {
+    .container{
+        font-size: 14px;
+    }
+}
