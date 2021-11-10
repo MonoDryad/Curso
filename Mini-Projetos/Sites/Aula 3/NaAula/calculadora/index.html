@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        body {
+            text-align: center;
+            background-image: url("https://raw.githubusercontent.com/MonoDryad/Curso/main/Mix/wallperper.png");
+            background-repeat: no-repeat;
+            background-color: #222222;
+        }
+
+        .botao {
+            font-style: italic;
+            border-radius: 40px;
+            border-style: groove;
+            font-size: large;
+        }
+
+        .corpo {
+            background-color: aquamarine;
+            border-radius: 40px;
+            border-style: groove;
+            border-color: black;
+            background-color: #222222;
+            background-image: url("https://raw.githubusercontent.com/MonoDryad/Curso/main/Mix/wallperper.png");
+        }
+
+        .titulo {
+            color: rgb(255, 133, 133);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 45px;
+        }
+
+        .grande {
+            font-size: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            border: rgb(255, 255, 255);
+            border-radius: 10px;
+        }
+
+        .input {
+            font-size: 15;
+            font-family: Arial, Helvetica, sans-serif;
+            border: rgb(255, 255, 255);
+            border-radius: 10px;
+        }
+
+        nav ul{height:200px; width:18%;}
+        nav ul{overflow:hidden; overflow-y:scroll;}
+    </style>
+</head>
+<body>
+<div class="corpo">
+    <h1 class="titulo">Calculadora Básica</h1>
+        <input class="grande" type="number" id="resultado" placeholder="Resultado" readonly>
+            <br><br>
+        <div class="btnDiv">
+            <button class="botao" onclick="soma()">Somar</button>
+                <button class="botao" onclick="multiplicar()">Multiplicar</button>
+                    <button class="botao" onclick="expoente()">Potência</button>
+                    <button class="botao" onclick="diminuir()">Diminuir</button>
+                <button class="botao" onclick="divisão()">Dividir</button>
+            <button class="botao" onclick="restante()">Restante</button>
+        </div>
+            <br><br>
+        <div class="input">
+            <input type="number" id="valorx" placeholder="Valor de X">
+            <input type="number" id="valory" placeholder="Valor de Y">
+        </div>
+       <br><br>
+</div>
+</body>
+<script>
+    const soma = function(){
+        let x = document.getElementById('valorx').value 
+        let y = document.getElementById('valory').value 
+        let resultado = parseFloat(x) + parseFloat(y)
+        document.getElementById('resultado').value = resultado
+    }
+
+    const diminuir = function(){
+        let x = document.getElementById('valorx').value 
+        let y = document.getElementById('valory').value 
+        let resultado = parseFloat(x) - parseFloat(y)
+        document.getElementById('resultado').value = resultado
+    }
+
+    const divisão = function(){
+        let x = document.getElementById('valorx').value 
+        let y = document.getElementById('valory').value 
+        let resultado = parseFloat(x) / parseFloat(y)
+        document.getElementById('resultado').value = resultado
+    }
+
+    const multiplicar = function(){
+        let x = document.getElementById('valorx').value 
+        let y = document.getElementById('valory').value 
+        let resultado = parseFloat(x) * parseFloat(y)
+        document.getElementById('resultado').value = resultado
+    }
+
+    const expoente = function(){
+        let x = document.getElementById('valorx').value 
+        let y = document.getElementById('valory').value 
+        let resultado = parseFloat(x) ** parseFloat(y)
+        document.getElementById('resultado').value = resultado
+    }
+
+    const restante = function(){
+        let x = document.getElementById('valorx').value 
+        let y = document.getElementById('valory').value 
+        let resultado = parseFloat(x) % parseFloat(y)
+        document.getElementById('resultado').value = resultado
+    }
+</script>
+</html>
