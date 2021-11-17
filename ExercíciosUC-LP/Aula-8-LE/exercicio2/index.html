@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Exercicio 2</title>
+</head>
+<body>
+    <header>
+        <label class="labeltitulo">Exercício 2</label>
+        <label><a href='#'>Inicio</a></label>
+        <label><a href='#'>Todos os Departamentos</a></label>
+    </header>
+    <div class="container">
+        <div class="container-head">
+            <label>Selecione um produto</label>
+            <input type="number" placeholder="ID do Produto" id="idproduto">
+        </div>
+        <div class="procurarbutton">
+            <button onclick="procurar()">Procurar produto</button>
+        </div>
+        <div class="container-content">
+            <p id="nome"></p>
+            <p id="descriçao"></p>
+            <p id="preço"></p>
+        </div>
+        <div class="procurarbutton">
+            <button onclick="verificar()" id="botaoverificar" class="verif" disabled=''>Verificar</button>
+        </div>
+        <div class="classifca">
+            <p id="classif"> </p>
+        </div>
+    </div>
+    <footer>
+        <ul>
+            <li>
+                E-mail: boomer@empresa.org.br
+            </li>
+            <li>
+                Telefone: (48) 66694-3432
+            </li>
+            <li>
+                PATROCINIO: SEU AMIGO
+            </li>
+        </ul>
+    </footer>
+</body>
+<script src="script.js"></script>
+</html>
