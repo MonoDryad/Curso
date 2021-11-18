@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pp</title>
+</head>
+<body>
+    <button id="botao" onclick="v()">Nome</button>
+    <p id="nomes"></p>
+</body>
+<script>
+    function v(){
+        let n = prompt('Digite a quantidade de loop')
+        let nome
+        for(i = 0;i < n;i++){
+            nome = prompt('Digite o seu nome')
+            document.getElementById('nomes').innerHTML += 'O nome ' + (i + 1) + ' ou ' + nome + ' têm ' + nome.length + ' caracteres. <br>'
+        }
+    }
+    
+</script>
+</html>
