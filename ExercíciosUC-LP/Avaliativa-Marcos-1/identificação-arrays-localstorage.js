@@ -100,7 +100,6 @@ $('.btnSubmitNewOrg').click(function(){
     }
 
     let indexReserva = -1
-
     while(indexReserva != 0){
         for(let i = 1; i < 5; i++){
             if(allPlayers.find(function(jogador){return jogador.nomeUsuario === $(`.reservaJogador${i}`).val()})){
@@ -128,4 +127,27 @@ $('.btnSubmitNewOrg').click(function(){
 // -- // -- // -- // -- // -- // -- // -- // -- // -- // -- // -- // -- // -- // -- // -- // -- // -- // -- // --
 // vv Página mdados.html
 
-
+$('.btnSearchOrg').click(function(){
+    let teamResults = `Times: \n`
+    let teamSuccessFullyFinded
+    if(allOrgs.find(function(existentOrgs){return existentOrgs.nomeOrg == $(`.OrgName`).val()})){
+        teamSuccessFullyFinded = allOrgs.find(function(existentOrgs){return existentOrgs.nomeOrg == $(`.OrgName`).val()})
+        console.log(teamSuccessFullyFinded)
+        teamResults += `Nome da Organização: ${teamSuccessFullyFinded.nomeOrg}` + `\n` + `Tag da Organização: ${teamSuccessFullyFinded.tagOrg}\n`
+        for(let i = 0; i < 5;i++){
+            let jogadores = allPlayers.find(function(jogadores){return jogadores.nomeUsuario == teamSuccessFullyFinded.jogadores[i]})
+            teamResults += `Jogador ${i+1}: ` + teamSuccessFullyFinded.jogadores[i] + ` - Rota: ${jogadores.funcao}` + `\n`
+        }
+        for(let i = 0; i < 4;i++){
+            if(teamSuccessFullyFinded.reservas[i] == null){
+                teamResults += `Jogador Reserva ${i+1}: ` + `Sem reserva` + `\n`
+            }else{
+                let jogadores = allPlayers.find(function(jogadores){return jogadores.nomeUsuario == teamSuccessFullyFinded.jogadores[i]})
+                teamResults += `Jogador Reserva ${i+1}: ` + teamSuccessFullyFinded.reservas[i] + ` - Rota: ${jogadores.funcao}` + `\n`
+            }
+        }
+    }else{
+        teamResults += `Time não encontrado`    
+    }
+    $('.areaSearchResultOrgs').val(teamResults)
+})
