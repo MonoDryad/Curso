@@ -5,10 +5,14 @@ let arrayNumb = []
 let numbers
 
 for(let i = 0; i < 7;i++){
-    userNumb = prompt('Digite 7 números palíndromos (616, 2112)')
+    userNumb = prompt(`Digite 7 números palíndromos (616, 2112) - Número ${i + 1}`)
     arrayNumb.push(userNumb)
 }
 
-for(let i = 0; i < 7;i++){
-
+for(let i = 0, j = 7; i < 7;i++, j--){
+    if(arrayNumb[i] == arrayNumb[j]){
+        console.log(`${arrayNumb} número é palíndromo`)
+    }else{
+        console.log('O vetor não é palíndromo')
+    }
 }
