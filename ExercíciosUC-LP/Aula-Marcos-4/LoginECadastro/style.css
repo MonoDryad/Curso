@@ -1,0 +1,95 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(15, 15, 15);
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction:column;
+}
+
+button{
+    cursor: pointer;
+}
+
+header{
+    display: flex;
+    background-color: brown;
+}
+
+header nav{
+    display: block;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto
+}
+
+header h3{
+    display: flex;
+    font-size: 35px;
+    padding: 15px
+}
+
+header a{
+    text-decoration: none;
+}
+
+.container-Main{
+    padding: 25px;
+    margin: auto;
+    width: 40%;
+    
+}
+
+.div-container-form-login, .div-container-form-registro{
+    border: 1px solid black;
+    margin: 10px;
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow:rgb(15, 15, 15) 5px 5px 0px 0px;
+}
+
+.container-do-email input, .container-da-senha input{
+    outline: none;
+    width: 100%;
+    margin-top: 15px;
+    border: 2px solid black;
+    border-radius: 0px 15px 0px 0px;
+}
+
+.container-da-senha input{
+    border-radius: 0px 0px 15px 0px;
+    margin-top: 3px;
+}
+
+.container-do-email input:hover, .container-da-senha input:hover{
+    border: 2px solid chocolate;
+}
+
+.container-do-button button{
+    margin-left: 15px;
+    width: 45%;
+    margin-top: 15px;
+    background-color: cadetblue;
+    border: none;
+    border-radius: 5px 15px 5px 15px;
+    font-size: 20px;
+}
+
+footer{
+    width: 100%;
+    background-color: black;
+
+    position: fixed;
+    bottom: 0; 
+    padding: 20px;
+}
+
+footer ul{
+    color: rgb(255, 255, 255);
+}
+
+footer li{
+    color: rgb(153, 153, 153);
+}

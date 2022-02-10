@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>L&C</title>
+</head>
+<body>
+    <header>
+        <h3>L&C</h3>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="index.html">L&C</a>
+        </nav>
+    </header>
+    <div class="container-Main">
+        <div class="div-container-form-login" id="div-container-form-login">
+            <h3>Entrar</h3>
+            <form class="formulario-de-login">
+                <div class="container-do-email">
+                    <input type="email" id="inpIdEmail" placeholder="Email">
+                </div>
+                <div class="container-da-senha">
+                    <input type="password" id="inpIdSenha" placeholder="Senha">
+                </div>
+                <div class="container-do-button">
+                    <button type="button" id="btnDoLogin" onclick="entrar()">Entrar</button>
+                    <button type="button" id="btnDoEntrarNoCadastro" onclick="entrarNoCadastro()">Cadastro</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="div-container-form-registro" id="div-container-form-registro">
+            <h3>Cadastro</h3>
+            <script>
+                document.getElementById('div-container-form-registro').style.display = 'none'
+            </script>
+            <form class="formulario-de-registro">
+                <div class="container-do-email">
+                    <input type="email" id="inpIdEmailRegistro" placeholder="Registrar Email">
+                </div>
+                <div class="container-da-senha">
+                    <input type="password" id="inpIdSenhaRegistro" placeholder="Registrar Senha">
+                </div>
+                <div class="container-do-button">
+                    <button type="button" id="btnDoRegistro" onclick="registro()">Registrar</button>
+                    <button type="button" id="btnDoSairDoCadastro" onclick="sairDoCadastro()">Voltar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <ul>
+            ENTRE EM CONTATO
+            <li>TELEFONE: 48 99565-3413</li>
+            <li>ENDEREÇO: CIDADE BLA BAIRRO BLABLA RUA BLABLABLA</li>
+        </ul>
+    </footer>
+</body>
+<script src="./script.js"></script>
+</html>

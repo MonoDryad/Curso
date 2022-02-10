@@ -136,14 +136,14 @@ $('.btnSearchOrg').click(function(){
         teamResults += `Técnico: ${teamSuccessFullyFinded.staff[0].apelido}\nAnalista: ${teamSuccessFullyFinded.staff[1].apelido}\n`
         for(let i = 0; i < 5;i++){
             let jogadores = allPlayers.find(function(jogadores){return jogadores.nomeUsuario == teamSuccessFullyFinded.jogadores[i]})
-            teamResults += `Jogador ${i+1}: ` + teamSuccessFullyFinded.jogadores[i] + ` - Rota: ${jogadores.funcao}` + `\n`
+            teamResults += `Jogador ${i+1}: ${teamSuccessFullyFinded.jogadores[i]} - Invocador: ${jogadores.invocador} - Rota: ${jogadores.funcao}\n`
         }
         for(let i = 0; i < 4;i++){
             if(teamSuccessFullyFinded.reservas[i] == null){
-                teamResults += `Jogador Reserva ${i+1}: ` + `Sem reserva` + `\n`
+                teamResults += `Jogador Reserva ${i+1}: Sem reserva\n`
             }else{
-                let jogadores = allPlayers.find(function(jogadores){return jogadores.nomeUsuario == teamSuccessFullyFinded.jogadores[i]})
-                teamResults += `Jogador Reserva ${i+1}: ` + teamSuccessFullyFinded.reservas[i] + ` - Rota: ${jogadores.funcao}` + `\n`
+                let jogadoresReserva = allPlayers.find(function(jogadoresReserva){return jogadoresReserva.nomeUsuario == teamSuccessFullyFinded.reservas[i]})
+                teamResults += `Jogador Reserva ${i+1}: ${teamSuccessFullyFinded.reservas[i]} - Invocador: ${jogadoresReserva.invocador} - Rota: ${jogadoresReserva.funcao}\n`
             }
         }
         teamResults += "Código: " + teamSuccessFullyFinded.codigo
@@ -151,4 +151,44 @@ $('.btnSearchOrg').click(function(){
         teamResults += `Time não encontrado`    
     }
     $('.areaSearchResultOrgs').val(teamResults)
+})
+
+$('.btnSearchPlayer').click(function(){
+    let playerResults = `Jogador:\n`
+    let playerSuccessFullyFinded
+        if(allPlayers.find(function(procurarJogador){return procurarJogador.nomeUsuario == $('.userNamePlayer').val() || procurarJogador.invocador == $('.summonersName').val()})){
+            playerSuccessFullyFinded = allPlayers.find(function(procurarJogador){return procurarJogador.nomeUsuario == $('.userNamePlayer').val() || procurarJogador.invocador == $('.summonersName').val()})
+            playerResults += `Nome do Usuário: ${playerSuccessFullyFinded.nomeUsuario}\nNome do Invocador: ${playerSuccessFullyFinded.invocador}\nRota: ${playerSuccessFullyFinded.funcao}\nCodigo: ${playerSuccessFullyFinded.codigo}`
+        }else{
+            playerResults += `Jogador não encontrado.`
+        }
+        $('.areaSearchResultPlayers').val(playerResults)
+})
+
+$('.btnSearchExistentsPlayers').click(function(){
+    let allPlayersResult = `Jogador(es):\n`
+        for(let i = 0;i < allPlayers.length;i++){
+            allPlayersResult += `Jogador ${i+1}: ${allPlayers[i].nomeUsuario} - Invocador: ${allPlayers[i].invocador}\n`
+        }
+        $('.areaSearchResultPlayers').val(allPlayersResult)
+})
+
+$('.btnSearchStaff').click(function(){
+    let playerResults = `Jogador:\n`
+    let playerSuccessFullyFinded
+        if(allPlayers.find(function(procurarJogador){return procurarJogador.nomeUsuario == $('.userNamePlayer').val() || procurarJogador.invocador == $('.summonersName').val()})){
+            playerSuccessFullyFinded = allPlayers.find(function(procurarJogador){return procurarJogador.nomeUsuario == $('.userNamePlayer').val() || procurarJogador.invocador == $('.summonersName').val()})
+            playerResults += `Nome do Usuário: ${playerSuccessFullyFinded.nomeUsuario}\nNome do Invocador: ${playerSuccessFullyFinded.invocador}\nRota: ${playerSuccessFullyFinded.funcao}\nCodigo: ${playerSuccessFullyFinded.codigo}`
+        }else{
+            playerResults += `Jogador não encontrado.`
+        }
+        $('.areaSearchResultStaffs').val(playerResults)
+})
+
+$('.btnSearchExistentsStaffs').click(function(){
+    let allStaffResult = `Jogador(es):\n`
+        for(let i = 0;i < allStaffs.length;i++){
+            allStaffResult += `Staff ${i+1}: ${allStaffs[i].nomeUsuario} - Apelido: ${allStaffs[i].apelido} - Função: ${allStaffs[i].funcao}\n`
+        }
+        $('.areaSearchResultStaffs').val(allStaffResult)
 })
