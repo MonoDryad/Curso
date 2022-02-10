@@ -130,10 +130,10 @@ $('.btnSubmitNewOrg').click(function(){
 $('.btnSearchOrg').click(function(){
     let teamResults = `Times: \n`
     let teamSuccessFullyFinded
-    if(allOrgs.find(function(existentOrgs){return existentOrgs.nomeOrg == $(`.OrgName`).val()})){
-        teamSuccessFullyFinded = allOrgs.find(function(existentOrgs){return existentOrgs.nomeOrg == $(`.OrgName`).val()})
-        console.log(teamSuccessFullyFinded)
+    if(allOrgs.find(function(existentOrgs){return existentOrgs.nomeOrg == $(`.OrgName`).val() || existentOrgs.codigo == $(`.OrgCode`).val()})){
+        teamSuccessFullyFinded = allOrgs.find(function(existentOrgs){return existentOrgs.nomeOrg == $(`.OrgName`).val() || existentOrgs.codigo == $(`.OrgCode`).val()})
         teamResults += `Nome da Organização: ${teamSuccessFullyFinded.nomeOrg}` + `\n` + `Tag da Organização: ${teamSuccessFullyFinded.tagOrg}\n`
+        teamResults += `Técnico: ${teamSuccessFullyFinded.staff[0].apelido}\nAnalista: ${teamSuccessFullyFinded.staff[1].apelido}\n`
         for(let i = 0; i < 5;i++){
             let jogadores = allPlayers.find(function(jogadores){return jogadores.nomeUsuario == teamSuccessFullyFinded.jogadores[i]})
             teamResults += `Jogador ${i+1}: ` + teamSuccessFullyFinded.jogadores[i] + ` - Rota: ${jogadores.funcao}` + `\n`
@@ -146,6 +146,7 @@ $('.btnSearchOrg').click(function(){
                 teamResults += `Jogador Reserva ${i+1}: ` + teamSuccessFullyFinded.reservas[i] + ` - Rota: ${jogadores.funcao}` + `\n`
             }
         }
+        teamResults += "Código: " + teamSuccessFullyFinded.codigo
     }else{
         teamResults += `Time não encontrado`    
     }
