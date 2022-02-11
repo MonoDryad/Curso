@@ -167,28 +167,36 @@ $('.btnSearchPlayer').click(function(){
 
 $('.btnSearchExistentsPlayers').click(function(){
     let allPlayersResult = `Jogador(es):\n`
-        for(let i = 0;i < allPlayers.length;i++){
-            allPlayersResult += `Jogador ${i+1}: ${allPlayers[i].nomeUsuario} - Invocador: ${allPlayers[i].invocador}\n`
+        if(allPlayers.length != 0){
+            for(let i = 0;i < allPlayers.length;i++){
+                allPlayersResult += `Jogador ${i+1}: ${allPlayers[i].nomeUsuario} - Invocador: ${allPlayers[i].invocador}\n`
+            }
+        }else{
+            allPlayersResult += `Nenhum jogador registrado`
         }
         $('.areaSearchResultPlayers').val(allPlayersResult)
 })
 
 $('.btnSearchStaff').click(function(){
-    let playerResults = `Jogador:\n`
-    let playerSuccessFullyFinded
-        if(allPlayers.find(function(procurarJogador){return procurarJogador.nomeUsuario == $('.userNamePlayer').val() || procurarJogador.invocador == $('.summonersName').val()})){
-            playerSuccessFullyFinded = allPlayers.find(function(procurarJogador){return procurarJogador.nomeUsuario == $('.userNamePlayer').val() || procurarJogador.invocador == $('.summonersName').val()})
-            playerResults += `Nome do Usuário: ${playerSuccessFullyFinded.nomeUsuario}\nNome do Invocador: ${playerSuccessFullyFinded.invocador}\nRota: ${playerSuccessFullyFinded.funcao}\nCodigo: ${playerSuccessFullyFinded.codigo}`
+    let StaffResult = `Funcionário(s):\n`
+    let staffSuccessFullyFinded
+        if(allStaffs.find(function(procurarStaff){return procurarStaff.nomeUsuario == $('.userNameStaff').val()})){
+            staffSuccessFullyFinded = allStaffs.find(function(procurarStaff){return procurarStaff.nomeUsuario == $('.userNameStaff').val()})
+            StaffResult += `Nome do Usuário: ${staffSuccessFullyFinded.nomeUsuario}\nApelido: ${staffSuccessFullyFinded.apelido}\nFunção: ${staffSuccessFullyFinded.funcao}\nCodigo: ${staffSuccessFullyFinded.codigo}`
         }else{
-            playerResults += `Jogador não encontrado.`
+            StaffResult += `Funcionário não encontrado.`
         }
-        $('.areaSearchResultStaffs').val(playerResults)
+        $('.areaSearchResultStaffs').val(StaffResult)
 })
 
 $('.btnSearchExistentsStaffs').click(function(){
-    let allStaffResult = `Jogador(es):\n`
-        for(let i = 0;i < allStaffs.length;i++){
-            allStaffResult += `Staff ${i+1}: ${allStaffs[i].nomeUsuario} - Apelido: ${allStaffs[i].apelido} - Função: ${allStaffs[i].funcao}\n`
+    let allStaffResult = `Funcionário(s):\n`
+        if(allStaffs.length != 0){
+            for(let i = 0;i < allStaffs.length;i++){
+                allStaffResult += `Staff ${i+1}: ${allStaffs[i].nomeUsuario} - Apelido: ${allStaffs[i].apelido} - Função: ${allStaffs[i].funcao}\n`
+            }
+        }else{
+            allStaffResult += `Nenhum funcionário registrado.`
         }
         $('.areaSearchResultStaffs').val(allStaffResult)
 })
