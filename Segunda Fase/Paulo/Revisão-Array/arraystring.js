@@ -1,0 +1,15 @@
+let nomes = ["Pedro", "Naiara", "Fernando", "Paulo", "Antônio", "Cesar", "Maria"]
+nomes.push("Zegôncio")
+nomes.push("Diego")
+nomes.push("Rai")
+nomes.push("Perdo")
+nomes.push("Flexivel")
+nomes.push("Ponto")
+console.log(nomes)
+// nomes.pop()
+// nomes.pop()
+// nomes.pop()
+// console.log(nomes)
+
+nomes.sort()
+console.log(nomes)
