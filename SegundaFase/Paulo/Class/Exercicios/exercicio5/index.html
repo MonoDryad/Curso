@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Caixa X</title>
+</head>
+<body>
+    <div>
+        <h2>Caixa X</h2>
+        <div class="criarConta" id="criarConta">
+            <h3>Criar conta</h3>
+            <div>
+                <input id="newUserAgency">
+                <input id="newAccountNumber">
+                <button onclick="criarConta()">Criar Conta</button>
+            </div>
+        </div>
+        <div class="visualizarConta" id="visualizarConta">
+            <label>Saldo atual: <input readonly id="currentSaldo"></label>
+            <label>Sacar: <input id="sacarSaldo"><button onclick="sacarsaldo()">Sacar</button></label>
+            <label>Depositar: <input id="depositarSaldo"><button onclick="depositarsaldo()">Depositar</button></label>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
