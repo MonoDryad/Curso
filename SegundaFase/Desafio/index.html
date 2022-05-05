@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados</title>
+</head>
+<body>
+    <h2>Exercicio 6 - Jogo de Dados (Desafio)</h2>
+    <div id="inscreverJogador">
+        <h3>Inscrever jogador</h3>
+        <div>
+            <h4>Jogador 1</h4>
+            <label>Nome: <input id="inscrever-nomejogador1"></label>
+        </div>
+        <div>
+            <h4>Jogador 2</h4>
+            <label>Nome: <input id="inscrever-nomejogador2"></label>
+        </div>
+        <button onclick="playGame()">Jogar</button>
+    </div>
+    <div id="containerMainGame">
+        <div id="containerJogador1">
+            <h3 id="nomeJogador1"></h3>
+            <p id="resultadoDados1"></p>
+            <p id="resultadoVencedor1"></p>
+            <textarea readonly style="height: 100px;" id="resultadoAnteriores1"></textarea>
+        </div>
+        <div id="containerJogador2">
+            <h3 id="nomeJogador2"></h3>
+            <p id="resultadoDados2"></p>
+            <p id="resultadoVencedor2"></p>
+            <textarea readonly style="height: 100px;" id="resultadoAnteriores2"></textarea>
+        </div>
+        <button disabled id="buttonDado" onclick="rodarDado()">Rodar dado</button>
+        <button onclick="resetar()">Resetar</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
